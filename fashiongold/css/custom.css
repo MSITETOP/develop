@@ -760,6 +760,9 @@ html,body {
 .float-right {
 	float: right;
 }
+.content_page_inner {
+	width: 960px; margin: 0 auto;
+}
 @media (max-width: 1299px) {
 	.header .phone {
 		margin-top: 8px;
@@ -824,6 +827,10 @@ html,body {
 	}
 }
 @media (max-width: 991px) {
+	.content_page_inner {
+		width: 100%; 
+		margin: 0;
+	}
 	.list-inline>li {
 		padding: 0 2px;
 	}
