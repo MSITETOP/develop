@@ -1419,15 +1419,16 @@ html,body {
 	border-color: #8f8f8f!important;
 	border-right: 1px solid #fff!important;
 	width: 50%!important;
+	margin-bottom: 30px!important;
 }
 .item_catalog_fav + .moreinfo {
 	display: block!important;
 	text-align: right!important;
-	right: 0!important;
+	right: 15px!important;
 	left: auto!important;
 	border: 1px solid #8f8f8f!important;
 	border-left: none!important;
-    margin-left: -15px!important;
+    margin-left: 0!important;
 	padding: 15px 30px!important;
 	padding-left: 0!important;
 	margin-right: -0!important;
@@ -1507,7 +1508,15 @@ html,body {
 		background-size: 50%;
 	}
 }
-
+@media (max-width: 767px) {
+	.item_catalog_fav {
+		margin-bottom: 15px!important;
+	}
+	.item_catalog_fav + .moreinfo {
+		padding: 15px!important;
+		padding-left: 0!important;
+	}
+}
 
 /* Карточка */
 .catalog_element {
