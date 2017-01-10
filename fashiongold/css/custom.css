@@ -1202,6 +1202,7 @@ html,body {
 
 /* Каталог */
 .catalognavline {
+	position: relative;
 	padding: 10px 15px;
 	border-bottom: 1px solid #8f8f8f;
 }
@@ -1209,6 +1210,9 @@ html,body {
 	content: '';
 	display: block;
 	clear: both;
+}
+.catalognavline a {
+	color: #0a94a0;
 }
 .catalognavline .title {
 	float: left;
@@ -1218,15 +1222,159 @@ html,body {
 	line-height: 20px;
 	margin-right: 30px;
 }
-.catalognavline .order {
+.catalognavline .filter_box {
+	float: right;
+	font-size: 14px;
+	height: 20px;	
+	line-height: 20px;
+	margin: 0 10px;
+}
+.catalognavline .filter_box .flt_set {
+	display: none;
+}
+.catalognavline .filter_box .flt_set a {
+	color: #646464;
+	font-size: 11px;
+	margin: 0 2px;
+}
+.catalognavline .filter_box .flt_set a::after {
+	content: '×';
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid #b4b4b4;
+	width: 14px;
+	height: 14px;
+	line-height: 12px;
+	text-align: center;
+	margin-left: 2px;
+}
+.catalognavline .filter_box > a.t {
 	float: left;
+}
+.catalognavline .filter_box .glyphicon-filter {
+	border-left: 1px solid #0a94a0;
+	padding-left: 5px;
+	font-size: 18px;
+	line-height: 20px;
+}
+.catalognavline .filter_popup {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	background: #f5f5f5;
+	top: 41px;
+	z-index: 99;
+	display: none;
+}
+.catalognavline .filter_popup.show {
+	display: block;
+}
+.catalognavline .filter_popup .item_set ul, .catalognavline .filter_popup .item_set .price_select {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+.catalognavline .filter_popup .item_set ul::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.catalognavline .filter_popup .item_set ul li {
+	
+}
+.catalognavline .filter_popup .item_set ul li label {
+	margin: 0;
+}
+.catalognavline .filter_popup .item_set ul li span {
+	font-weight: normal;
+	cursor: pointer;
+	margin: 0;
+	height: 17px;
+	line-height: 17px;
+	padding-left: 14px;
+	position: relative;
+	display: inline-block;
+}
+.catalognavline .filter_popup .item_set ul li input {
+	display: none;
+}
+.catalognavline .filter_popup .item_set ul li span::before {
+	font-family: 'Glyphicons Halflings';
+	content: "\e157";
+	height: 17px;
+	line-height: 17px;
+	display: block;
+	position: absolute;
+	left:0;
+	top: 0;
+}
+.catalognavline .filter_popup .item_set ul li input:checked + span::before {
+	content: "\e067";
+}
+.catalognavline .filter_popup .item_set.flt_inputs ul li {
+	width: 50%;
+	float: left;
+}
+.catalognavline .filter_popup .item_set .price_select input {
+	width: 35%;
+}
+.catalognavline .filter_popup .item_set .name {
+    text-transform: uppercase;
+    font-size: 13px;
+	color: #0a949f;
+}
+.catalognavline .filter_popup .item_set .name span {
+	font-size: 11px;
+	text-transform: lowercase;
+	color: #646464;
+	height: 12px;
+}
+.catalognavline .filter_popup .item_set .name span.clear-almaz-ico {
+	background: url(../images/clear-almaz-ico.png) no-repeat 0 50%;
+	padding-left: 17px;
+	margin-right: 3px;
+}
+.catalognavline .filter_popup .item_set .name span.almaz-ico {
+	background: url(../images/almaz-ico.png) no-repeat 0 50%;
+	padding-left: 33px;
+}
+.catalognavline .filter_popup .btn_flt {
+	text-align: center;
+}
+.catalognavline .filter_popup .btn_flt .btn {
+	margin: 5px;
+}
+@media (min-width: 1300px) {
+	.catalognavline .filter_box .flt_set {
+		display: inline-block;
+	}	
+	.catalognavline .filter_box {
+		float: left;
+	}
+}
+.catalognavline .paginationline {
+	float: right;
 	font-size: 14px;
 	height: 20px;	
 	line-height: 20px;
 	margin: 0 10 px;
 }
-.catalognavline .order a {
+.catalognavline .paginationline a {
 	color: #787878;
+	text-decoration: underline;
+}
+.catalognavline .paginationline a:hover, .catalognavline .paginationline a.act {
+	color: #0a949f;
+	text-decoration: none;
+}
+.catalognavline .sorter {
+	float: right;
+	font-size: 14px;
+	height: 20px;	
+	line-height: 20px;
+	margin: 0 10 px;
+	margin-right: 20px;
 }
 .item_catalog {
 	border: 1px solid #fff;
@@ -1581,6 +1729,7 @@ html,body {
 }
 .catalog_element .dopinfo ul li {
 	width: 49%;
+	margin-right: 1%;
 	display: block;
 	float: left;
 	font-size: 10px;
@@ -1641,7 +1790,7 @@ html,body {
 	background: url(../images/sprite-element.png) no-repeat 0 1px;
 	padding-left: 35px;
 	text-decoration: none;
-	margin: 10px;
+	margin: 10px 2px;
 }
 .catalog_element .dop_btn_img a.btn_print {
 	display: inline-block;
@@ -1651,7 +1800,7 @@ html,body {
 	background: url(../images/sprite-element.png) no-repeat 0 -29px;
 	padding-left: 35px;
 	text-decoration: none;
-	margin: 10px;
+	margin: 10px 2px;
 }
 .catalog_element .dop_btn_img a.btn_info {
 	display: inline-block;
@@ -1661,7 +1810,8 @@ html,body {
 	background: url(../images/sprite-element.png) no-repeat 0 -60px;
 	padding-left: 35px;
 	text-decoration: none;
-	margin: 10px;
+	margin: 10px 2px;
+	font-size: 11px;
 }
 @media (max-width: 767px) {
 	.catalog_element .btn_box a {
@@ -1913,7 +2063,7 @@ ul.guide-list li a {
 	padding-top: 0;
 }
 .modal-body::before {
-	border-top: 1px solid #000;
+	border-top: 1px solid #0a949f;
 	content: '';
 	display: block;
 	padding-bottom: 20px;
@@ -1923,6 +2073,7 @@ ul.guide-list li a {
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #0a949f;
+	text-align: center;
 }
 .modal-header .close {
 	border: 1px solid #666666;
@@ -1935,4 +2086,5 @@ ul.guide-list li a {
 	line-height: 24px;
 	text-align: center;
 	font-weight: 300;
+	display: none;
 }
