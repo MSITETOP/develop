@@ -385,6 +385,7 @@ html,body {
 	position: relative;
 	font-family: 'Garamond Regular';
 	border-radius: 2px;
+	display: block;
 }
 .b1 .l1 {
 	font-size: 40px;
@@ -421,11 +422,20 @@ html,body {
 .b2-1 {
 	height: 480px;
 	background: #292929;
-	background-image: url(../images/b2-1.jpg);
 	background-repeat: no-repeat;
 	background-position: 30px 100%;
 	margin-top: 10px;
 	margin-right: 10px;
+	box-shadow: 0 0 5px #292929;
+	border-radius: 2px;
+	position: relative;
+}
+.b2-1-item {
+	height: 480px;
+	background: #292929;
+	background-image: url(../images/b2-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 30px 100%;
 	box-shadow: 0 0 5px #292929;
 	border-radius: 2px;
 	position: relative;
@@ -463,10 +473,19 @@ html,body {
 .b2-2 {
 	background: #ededed;
 	height: 730px;
-	background-image: url(../images/b2-2.jpg);
 	background-repeat: no-repeat;
 	background-position: 100% 160px;
 	margin-top: 10px;
+	box-shadow: 0 0 5px #ededed;
+	border-radius: 2px;
+	position: relative;
+}
+.b2-2-item {
+	background: #ededed;
+	height: 730px;
+	background-image: url(../images/b2-2.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 160px;
 	box-shadow: 0 0 5px #ededed;
 	border-radius: 2px;
 	position: relative;
@@ -589,11 +608,20 @@ html,body {
 .b4-1 {
 	height: 480px;
 	background: #000;
-	background-image: url(../images/b4-1.jpg);
 	background-repeat: no-repeat;
 	background-position: 30px 100%;
 	margin-top: 10px;
 	margin-right: 10px;
+	box-shadow: 0 0 5px #000;
+	border-radius: 2px;
+	position: relative;
+}
+.b4-1-item {
+	height: 480px;
+	background: #000;
+	background-image: url(../images/b4-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 30px 100%;
 	box-shadow: 0 0 5px #000;
 	border-radius: 2px;
 	position: relative;
@@ -633,10 +661,19 @@ html,body {
 .b4-2 {
 	background: #0a94a0;
 	height: 480px;
-	background-image: url(../images/b4-2.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 125px;
 	margin-top: 10px;
+	box-shadow: 0 0 5px #0a94a0;
+	border-radius: 2px;
+	position: relative;
+}
+.b4-2-item {
+	background: #0a94a0;
+	height: 480px;
+	background-image: url(../images/b4-2.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 125px;
 	box-shadow: 0 0 5px #0a94a0;
 	border-radius: 2px;
 	position: relative;

@@ -48,6 +48,56 @@ owl.owlCarousel({
     autoplayTimeout:5000,
     autoplayHoverPause:true
 });
+var indexslids1 = $('.index-slids-1');
+indexslids1.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true
+});
+var indexslids2 = $('.index-slids-2');
+indexslids2.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:true,
+    autoplayTimeout:7000,
+    autoplayHoverPause:true
+});
+var indexslids3 = $('.index-slids-3');
+indexslids3.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true
+});
+var indexslids4 = $('.index-slids-4');
+indexslids4.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true
+});
+var indexslids5 = $('.index-slids-5');
+indexslids5.owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
+});
 $('a.ajaxModal').on("click", function(e){
 	$("#ajaxModal").find(".modal-title").text($(this).text());
 	$("#ajaxModal").find(".modal-body").load($(this).attr("href"),function() {$("#ajaxModal").modal('show');});
