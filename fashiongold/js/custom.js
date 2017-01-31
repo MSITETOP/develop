@@ -156,8 +156,34 @@ catalogSlider1.owlCarousel({
         }
     }
 });
+
 var catalogSlider2 = $('#element_slider_2');
 catalogSlider2.owlCarousel({
+	items: 6,
+    loop:true,
+    margin:0,
+	padding: 0,
+    autoplay:false,
+	navigation: true,
+    responsive:{
+        0:{
+            items:2
+        },
+        500:{
+            items:3
+        },
+        700:{
+            items:4
+        },
+        1000:{
+            items:6
+        }
+    }
+});
+catalogSlider2.hide();
+
+var catalogSlider3 = $('#element_slider_3');
+catalogSlider3.owlCarousel({
 	items: 6,
     loop:true,
     margin:0,

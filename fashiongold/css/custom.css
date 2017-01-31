@@ -814,10 +814,10 @@ html,body {
 	width: 960px; margin: 0 auto;
 }
 .blue {
-	color: #08959f;
+	color: #08959f!important;
 }
 .gray {
-	color: #787878;
+	color: #787878!important;
 }
 .btn {
     display: inline-block;
@@ -1262,9 +1262,9 @@ html,body {
 .catalognavline .filter_box {
 	float: right;
 	font-size: 14px;
-	height: 20px;	
 	line-height: 20px;
 	margin: 0 10px;
+	max-width: 700px;
 }
 .catalognavline .filter_box .flt_set {
 	display: none;
@@ -1867,6 +1867,9 @@ html,body {
 	padding-bottom: 0;
 	text-transform: uppercase;
 	font-family: 'Garamond Regular';
+}
+.element_slider>.title span {
+	cursor: pointer;
 }
 .element_slider .slider .owl-controls .owl-prev {
 	position: absolute;
