@@ -192,87 +192,90 @@
 					<div class="item_set col-lg-2 col-sm-3">
 						<div class="name">Металл:</div>
 						<ul>
-							<li><label><input type="checkbox" /><span>всё золото</span></label></li>
-							<li><label><input type="checkbox" /><span>желтое золото</span></label></li>
-							<li><label><input type="checkbox" /><span>белое золото</span></label></li>
-							<li><label><input type="checkbox" checked /><span>комбинированный</span></label></li>
-							<li><label><input type="checkbox" /><span>красное золото</span></label></li>
-							<li><label><input type="checkbox" /><span>всё серебро</span></label></li>
+							<li><label><input type="checkbox" /><span>всё золото (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>желтое золото (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>белое золото (2)</span></label></li>
+							<li><label><input type="checkbox" checked /><span>комбинированный (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>красное золото (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>всё серебро (2)</span></label></li>
 						</ul>
 					</div>
 					<div class="item_set col-lg-2 col-sm-3">
 						<div class="name">Проба:</div>
 						<ul>
-							<li><label><input type="checkbox" /><span>золото 375</span></label></li>
-							<li><label><input type="checkbox" checked /><span>золото 585</span></label></li>
-							<li><label><input type="checkbox" /><span>золото 750</span></label></li>
-							<li><label><input type="checkbox" /><span>серебро 925</span></label></li>
+							<li><label><input type="checkbox" /><span>золото 375 (2)</span></label></li>
+							<li><label><input type="checkbox" checked /><span>золото 585 (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>золото 750 (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>серебро 925 (2)</span></label></li>
 						</ul>
 					</div>
 					<div class="item_set col-lg-4 flt_inputs  col-sm-6">
-						<div class="name">Вставка: <div class="visible-sm visible-xs"></div><span class="clear-almaz-ico">с моно вставкой</span><span class="almaz-ico">в сочетании с различными камнями</span></div>
+						<div class="name">Вставка: <div class="visible-sm visible-xs"></div>
+							<span class="clear-almaz-ico" onclick="$(this).toggleClass('act')">с моно вставкой</span>
+							<span class="almaz-ico" onclick="$(this).toggleClass('act')">в сочетании с различными камнями</span>
+						</div>
 						<ul>
-							<li><label><input type="checkbox" /><span>без вставок</span></label></li> 
-							<li><label><input type="checkbox" /><span>агат</span></label></li>
-							<li><label><input type="checkbox" /><span>аметист</span></label></li>
-							<li><label><input type="checkbox" /><span>берилл</span></label></li> 
-							<li><label><input type="checkbox" /><span>бирюза</span></label></li> 
-							<li><label><input type="checkbox" checked /><span>бриллиант</span></label></li>
-							<li><label><input type="checkbox" /><span>бриллиант черный</span></label></li>
-							<li><label><input type="checkbox" /><span>бриллианты фантаз</span></label></li>
-							<li><label><input type="checkbox" /><span>жемчуг</span></label></li>
-							<li><label><input type="checkbox" /><span>изумруд</span></label></li> 
-							<li><label><input type="checkbox" /><span>кварц</span></label></li>
-							<li><label><input type="checkbox" /><span>коралл</span></label></li> 
-							<li><label><input type="checkbox" /><span>корунд</span></label></li> 
-							<li><label><input type="checkbox" /><span>кошачий глаз</span></label></li> 
-							<li><label><input type="checkbox" /><span>муссанит</span></label></li> 
-							<li><label><input type="checkbox" /><span>оникс</span></label></li>
-							<li><label><input type="checkbox" /><span>периодит</span></label></li>
-							<li><label><input type="checkbox" /><span>перламутр</span></label></li>
-							<li><label><input type="checkbox" /><span>празиолит</span></label></li>
-							<li><label><input type="checkbox" /><span>раух-топаз</span></label></li>
-							<li><label><input type="checkbox" /><span>родолит</span></label></li> 
-							<li><label><input type="checkbox" /><span>рубин</span></label></li> 
-							<li><label><input type="checkbox" /><span>сапфир</span></label></li> 
-							<li><label><input type="checkbox" /><span>сердолик</span></label></li>
-							<li><label><input type="checkbox" /><span>топаз</span></label></li> 
-							<li><label><input type="checkbox" /><span>саворит</span></label></li> 
-							<li><label><input type="checkbox" /><span>турмалин</span></label></li> 
-							<li><label><input type="checkbox" /><span>фианит</span></label></li> 
-							<li><label><input type="checkbox" /><span>флюорит</span></label></li> 
-							<li><label><input type="checkbox" /><span>хризолит</span></label></li> 
-							<li><label><input type="checkbox" /><span>хризопраз</span></label></li>
-							<li><label><input type="checkbox" /><span>циркон</span></label></li>
-							<li><label><input type="checkbox" /><span>цитрин</span></label></li>
-							<li><label><input type="checkbox" /><span>эмаль</span></label></li> 
+							<li><label class="disabled"><input type="checkbox" disabled /><span>без вставок (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>агат (2) (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>аметист (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>берилл (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>бирюза (2)</span></label></li> 
+							<li><label><input type="checkbox" checked /><span>бриллиант (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>бриллиант черный (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>бриллианты фантаз (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>жемчуг (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>изумруд (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>кварц (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>коралл (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>корунд (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>кошачий глаз (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>муссанит (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>оникс (2)</span></label></li>
+							<li><label class="disabled"><input disabled type="checkbox" /><span>периодит (2)</span></label></li>
+							<li><label class="disabled"><input disabled type="checkbox" /><span>перламутр (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>празиолит (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>раух-топаз (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>родолит (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>рубин (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>сапфир (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>сердолик (2)</span></label></li>
+							<li><label class="disabled"><input disabled type="checkbox" /><span>топаз (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>саворит (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>турмалин (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>фианит (2)</span></label></li> 
+							<li><label class="disabled"><input disabled type="checkbox" /><span>флюорит (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>хризолит (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>хризопраз (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>циркон (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>цитрин (2)</span></label></li>
+							<li><label><input type="checkbox" /><span>эмаль (2)</span></label></li> 
 						</ul>
 					</div>
 					<div class="item_set col-lg-2 flt_inputs  col-sm-4">
 						<div class="name">Размеры:</div>
 						<ul>
-							<li><label><input type="checkbox" /><span>14</span></label></li> 
-							<li><label><input type="checkbox" /><span>15</span></label></li> 
-							<li><label><input type="checkbox" /><span>16</span></label></li> 
-							<li><label><input type="checkbox" /><span>17</span></label></li> 
-							<li><label><input type="checkbox" /><span>18</span></label></li> 
-							<li><label><input type="checkbox" /><span>19</span></label></li> 
-							<li><label><input type="checkbox" /><span>20</span></label></li> 
-							<li><label><input type="checkbox" /><span>21</span></label></li> 
-							<li><label><input type="checkbox" /><span>22</span></label></li> 
-							<li><label><input type="checkbox" /><span>23</span></label></li> 
-							<li><label><input type="checkbox" /><span>24</span></label></li> 
-							<li><label><input type="checkbox" checked /><span>14.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>15.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>16.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>17.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>18.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>19.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>20.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>21.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>22.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>23.5</span></label></li> 
-							<li><label><input type="checkbox" /><span>24.5</span></label></li> 
+							<li><label><input type="checkbox" /><span>14 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>15 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>16 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>17 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>18 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>19 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>20 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>21 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>22 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>23 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>24 (2)</span></label></li> 
+							<li><label><input type="checkbox" checked /><span>14.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>15.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>16.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>17.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>18.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>19.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>20.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>21.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>22.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>23.5 (2)</span></label></li> 
+							<li><label><input type="checkbox" /><span>24.5 (2)</span></label></li> 
 						</ul>
 					</div>
 					<div class="item_set col-lg-2 col-sm-6">
