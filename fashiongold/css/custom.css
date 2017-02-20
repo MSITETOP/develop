@@ -2153,3 +2153,6 @@ ul.guide-list li a {
 	font-weight: 300;
 	display: none;
 }
+.hide-nav .owl-controls {
+    display: none;
+}

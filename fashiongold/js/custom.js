@@ -134,6 +134,9 @@ catalogElementImages.owlCarousel({
 	navigation: true,
 });
 var catalogSlider1 = $('#element_slider_1');
+catalogSlider1.on('initialized.owl.carousel resized.owl.carousel', function(e) {
+    $(e.target).toggleClass('hide-nav', e.item.count <= e.page.size);
+});
 catalogSlider1.owlCarousel({
 	items: 6,
     loop:true,
@@ -141,6 +144,7 @@ catalogSlider1.owlCarousel({
 	padding: 0,
     autoplay:false,
 	navigation: true,
+	nav: true,
     responsive:{
         0:{
             items:2
@@ -154,10 +158,13 @@ catalogSlider1.owlCarousel({
         1000:{
             items:6
         }
-    }
+    },
 });
 
 var catalogSlider2 = $('#element_slider_2');
+catalogSlider2.on('initialized.owl.carousel resized.owl.carousel', function(e) {
+    $(e.target).toggleClass('hide-nav', e.item.count <= e.page.size);
+});
 catalogSlider2.owlCarousel({
 	items: 6,
     loop:true,
@@ -165,6 +172,7 @@ catalogSlider2.owlCarousel({
 	padding: 0,
     autoplay:false,
 	navigation: true,
+	nav: true,
     responsive:{
         0:{
             items:2
@@ -183,6 +191,9 @@ catalogSlider2.owlCarousel({
 catalogSlider2.hide();
 
 var catalogSlider3 = $('#element_slider_3');
+catalogSlider3.on('initialized.owl.carousel resized.owl.carousel', function(e) {
+    $(e.target).toggleClass('hide-nav', e.item.count <= e.page.size);
+});
 catalogSlider3.owlCarousel({
 	items: 6,
     loop:true,
@@ -190,6 +201,7 @@ catalogSlider3.owlCarousel({
 	padding: 0,
     autoplay:false,
 	navigation: true,
+	nav: true,
     responsive:{
         0:{
             items:2
