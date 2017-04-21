@@ -307,12 +307,14 @@ html,body {
 	background:#fff;
 	border-bottom: 1px solid #8f8f8f;
 	width: 100%;
+    height: 392px;
 	z-index: 998;
 	left:0;
-	padding: 20px 25px 0px 25px;	
+	/*padding: 20px 25px 0px 25px;	*/
 	margin-top: -1px;
 	text-align: left;
-	display: none;
+    overflow: hidden;
+    display: none;
 }
 .top_line_menu li:hover .popap_top_line_menu {
 	opacity: 1;
@@ -374,17 +376,13 @@ html,body {
 }
 .popap_top_line_menu .item .img {
 	width: 100%;
-	position: absolute;
-	top:20px;
-	bottom: 20px;
-	right: 0;
+	height: 323px;
 	background-size: cover;
-	border: 2px;
 	background-position: 50% 100%;
 }
 .popap_top_line_menu .item .img-box {
 	height: 100%;
-	position: absolute;
+	float: right;
 	top:0;
 	right: 0;
 	padding: 20px 0;	
@@ -1844,6 +1842,8 @@ html,body {
 }
 .catalog_element .trumb_images {
 	height: 430px;
+    width: 135px;
+    float: left;
 	overflow: hidden;
 }
 .catalog_element .trumb_images .t {
@@ -1867,8 +1867,9 @@ html,body {
 	padding: 0 30px;
 }
 .catalog_element .big_images .img {
-	width: 100%;
-	height: 430px;
+    max-width: 100%;
+	width: 400px;
+	height: 400px;
 	background-size: contain;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -2209,4 +2210,19 @@ ul.guide-list li a {
 
 .catalog-list .col-lg-2 {
 	padding: 0!important;
+}
+
+
+.pop-eb {
+    width: 12700px; 
+}
+.slide_item  {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1270px;
+  float: left;
+  text-align: left;
+  padding: 19px 0 10px 26px;
+  background: #fff no-repeat left top; 
 }

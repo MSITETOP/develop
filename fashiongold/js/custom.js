@@ -3,6 +3,60 @@
 https://msite.top/
 admin@msite.top
 */
+function is_touch_device() {
+    return !!('ontouchstart' in window);
+}
+function nav() {
+    var rPop = 1;
+    if(is_touch_device()){
+        $('ul.top_line_menu li a').on("click", function(e){
+            e.preventDefault();
+        });
+        $('ul.top_line_menu>li').on('click', function(e) {
+            var tekItem = $(this);
+            var indexItem = tekItem.data("par");
+            if(rPop == 1) {
+                rPop = 0;
+                $('#pop').stop().fadeIn(400);
+                $('#pop .pop-eb').css('margin-left', -(1270*indexItem));
+            } else {
+                $('#pop .pop-eb').stop().animate({"margin-left": -(1270*indexItem)}, 400);
+            }
+            e.stopPropagation();
+        });
+        $('#pop').on('mouseover', function(e) {
+            e.stopPropagation();
+        });
+        $('body').on('mouseover', function() {
+            rPop = 1;
+            $('#pop').fadeOut(400);
+        });
+    } else {
+        $('ul.top_line_menu>li').on('mouseover', function(e) {
+            var tekItem = $(this);
+            var indexItem = tekItem.data("par");
+            if(rPop == 1) {
+                rPop = 0;
+                $('#pop').stop().fadeIn(400);
+                $('#pop .pop-eb').css('margin-left', -(1270*indexItem));
+            } else {
+                $('#pop .pop-eb').stop().animate({"margin-left": -(1270*indexItem)}, 400);
+            }
+            $('.visList').removeClass('visList'); //chak
+            e.stopPropagation();
+        });
+        $('#pop').on('mouseover', function(e) {
+            e.stopPropagation();
+        });
+        $('body').on('mouseover', function() {
+            rPop = 1;
+            $('#pop').fadeOut(400);
+        });
+    }
+};
+$(document).on('ready', function() {
+    nav();
+});
 
 // Удалить при интеграции
 var menuItems = {
